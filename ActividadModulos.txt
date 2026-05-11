@@ -1,0 +1,37 @@
+Actividad 1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+1.-¿Que problema tiene?
+ Se intenta declarar la variable usuarios dos veces usando let. En JavaScript, esto lanzará un error inmediato
+Mezcla lógica de usuarios con lógica de productos en un mismo bloque sin estructura clara.
+2.-¿Qué parte podria separarse?
+Hacer modulo usuario y modulo productos
+3.-¿Qué nombres causan conflicto?
+usuarios y usuariosActivos nombres similasres y un arregose intenta modificar.
+
+Actividad 2.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+¿Qué funciones van juntas?
+poperaciones,usuarios y productos
+¿Qué nombre tendria cada archivo?
+calculadora,usuarios y products
+
+
+Actividad 3.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Export-----------------
+export function sumar(a, b) {
+  return a + b;
+}
+
+export function saludar(nombre) {
+  return `Hola, ${nombre}, ¡un gusto saludarte!`;
+}
+
+
+import ---------------
+// Importamos las funciones específicas entre llaves
+import { sumar, saludar } from './math.js';
+
+console.log(sumar(10, 5));     // Resultado: 15
+console.log(saludar('Alex'));  // Resultado: Hola, Alex, ¡un gusto saludart
+
+
