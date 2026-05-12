@@ -1,13 +1,11 @@
-let productos=["control","playStation","pantalla"];
 
-
- export export function CalcularEnvio(productos){
-    for(let i=0;i<productos.lenght;i++){
-        if(productos.lenght>3 ||productos.lenght<=10){
+  export function CalcularEnvio(cantidadProductos){
+    
+        if(cantidadProductos>3 ||cantidadProductos<=10){
             console.log("Costo de envio $15 USD");
             
         }
-        else if(productos.lenght>10){
+        else if(cantidadProductos>10){
             console.log("Envio Gratis");
 
         }
@@ -15,7 +13,7 @@ let productos=["control","playStation","pantalla"];
             console.log("No se permiten compras menores a 3 productos");
 
         }
-    }
+    
 
 
 }
